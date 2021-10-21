@@ -1,0 +1,37 @@
+https://github.com/eswaribala/rpsboacamunda_oct2021
+
+https://github.com/eswaribala
+
+
+Docker  - 
+
+docker pull camunda/camunda-bpm-platform:latest
+docker run -d --name camunda -p 8080:8080 camunda/camunda-bpm-platform:latest
+# open browser with url: http://localhost:8080/camunda-welcome/index.html
+
+How to eanble CMMN in modeler
+Run the below command in command prompt
+
+Goto Camunda modeler path  -> "Camunda Modeler.exe" --no-disable-cmmn
+
+
+<dependency>
+	    <groupId>org.codehaus.groovy</groupId>
+	    <artifactId>groovy-all</artifactId>
+	    <version>3.0.0</version>
+	    <type>pom</type>
+	</dependency>
+
+
+Javascript expression in script task
+
+var system = java.lang.System
+system.out.println("Normal print output")
+var logger = java.util.logging.Logger;
+var log = logger.getLogger("MY_JS_LOGGER");
+log.info("I'm logging");
+system.out.println(execution.getVariable("decision"));
+
+
+
+${execution.setVariable("status","success")}
